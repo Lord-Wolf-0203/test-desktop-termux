@@ -82,7 +82,7 @@ apt install kali-desktop-kde -y
 
 **Nota**: O XFCE4 é o mais recomendado por ser uma GUI muito leve e ser o padrão do Kali.
 
-## 6º Passo: Instalar o Zsh e definir como padrão
+## 6º Passo: Instalar o Zsh e definir como padrão (opcional)
 
 ```sh
 apt update
