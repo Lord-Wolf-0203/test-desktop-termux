@@ -126,7 +126,7 @@ sleep 3
 am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity > /dev/null 2>&1
 sleep 1
 
-proot-distro login debian --shared-tmp -- /bin/bash -c  'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && service dbus start && su - kali -c "env DISPLAY=:0 gnome-shell --x11"'
+proot-distro login debian --shared-tmp -- /bin/bash -c  'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && service dbus start && su - root -c "env DISPLAY=:0 gnome-shell --x11"'
 
 exit 0
 ```
@@ -147,7 +147,7 @@ sleep 3
 am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity > /dev/null 2>&1
 sleep 1
 
-proot-distro login debian --shared-tmp -- /bin/bash -c  'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && service dbus start && su - kali -c "env DISPLAY=:0 startxfce4"'
+proot-distro login debian --shared-tmp -- /bin/bash -c  'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && service dbus start && su - root -c "env DISPLAY=:0 startxfce4"'
 
 exit 0
 ```
@@ -168,7 +168,7 @@ sleep 3
 am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity > /dev/null 2>&1
 sleep 1
 
-proot-distro login debian --shared-tmp -- /bin/bash -c  'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && service dbus start && su - kali -c "env DISPLAY=:0 startlxde"'
+proot-distro login debian --shared-tmp -- /bin/bash -c  'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && service dbus start && su - root -c "env DISPLAY=:0 startlxde"'
 
 exit 0
 ```
@@ -189,7 +189,7 @@ sleep 3
 am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity > /dev/null 2>&1
 sleep 1
 
-proot-distro login debian --shared-tmp -- /bin/bash -c  'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && service dbus start && su - kali -c "env DISPLAY=:0 startplasma-x11"'
+proot-distro login debian --shared-tmp -- /bin/bash -c  'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && service dbus start && su - root -c "env DISPLAY=:0 startplasma-x11"'
 
 exit 0
 ```
