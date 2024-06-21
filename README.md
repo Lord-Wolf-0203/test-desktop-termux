@@ -12,6 +12,11 @@ pkg install pulseaudio -y
 pkg install proot-distro -y
 pkg install wget -y
 pkg install git -y
+```
+
+instale e faça login no Debian proot
+
+```sh
 proot-distro install debian
 proot-distro login debian
 ```
