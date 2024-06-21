@@ -14,7 +14,7 @@ pkg install wget -y
 pkg install git -y
 ```
 
-instale e faça login no Debian proot
+instale e faça login no Debian proot:
 
 ```sh
 proot-distro install debian
