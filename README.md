@@ -58,6 +58,7 @@ apt list --upgradable
 apt-get install apt -y
 apt-get dist-upgrade -y
 apt autoremove -y
+apt install kali-defaults -y
 apt update
 ```
 
