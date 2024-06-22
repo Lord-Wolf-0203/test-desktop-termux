@@ -16,7 +16,7 @@ pkg install git -y
 ```
 
 ### erro signal 9 no termux 
-**se você estiver no Android 12+ vai ser necessário usar comandos adb para desativar o Phantom process killer por conta do erro signal 9 no termux**
+**se você estiver no Android 12+ vai ser necessário usar comandos adb para desativar o Phantom process killer**
 
 ```sh
 adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"
