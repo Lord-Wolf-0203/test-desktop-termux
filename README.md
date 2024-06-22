@@ -1,6 +1,7 @@
-## Termux desktop
+# Termux desktop
 **nota**: isso e apenas um repositório em português aonde um cara aleatório posta tutoriais duvidosas sobre distro linux no termux.
-## pacotes comumente ultilizados no termux
+### pacotes comumente ultilizados no termux
+
 ```sh
 termux-setup-storage
 apt update
@@ -12,4 +13,13 @@ pkg install pulseaudio -y
 pkg install proot-distro -y
 pkg install wget -y
 pkg install git -y
+```
+
+### erro signal 9 no termux 
+**se você estiver no Android 12+ vai ser necessário usar comandos adb para desativar o Phantom process killer por conta do erro signal 9 no termux**
+
+```sh
+adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"
+adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"
+adb shell settings put global settings_enable_monitor_phantom_procs false
 ```
