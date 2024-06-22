@@ -1,5 +1,5 @@
 ## Termux desktop
-**nota**: isso e apenas um repositório aonde um cara aleatório posta tutoriais duvidosas sobre distro linux no termux, gui e etc.
+**nota**: isso e apenas um repositório em português aonde um cara aleatório posta tutoriais duvidosas sobre distro linux no termux.
 ## pacotes comumente ultilizados no termux
 ```sh
 termux-setup-storage
