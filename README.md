@@ -1,5 +1,5 @@
 # Termux desktop
-**nota**: isso e apenas um repositório em português aonde um cara aleatório posta tutoriais duvidosos sobre distro linux no termux.
+**nota**: isso e apenas um repositório aonde um cara aleatório posta tutoriais duvidosos sobre distro linux no termux.
 ### pacotes ultilizados no termux
 
 ```sh
