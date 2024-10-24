@@ -35,6 +35,6 @@ EOF
 
 # Tornando o script executável
 chmod +x ~/../usr/bin/start
-rm Install.sh
+rm install-xfce4-zink.sh
 
 echo "Instalação concluída. Use o comando 'start' para iniciar o XFCE4 com Zink."
