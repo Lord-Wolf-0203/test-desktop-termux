@@ -29,10 +29,11 @@ XDG_RUNTIME_DIR=${TMPDIR} termux-x11 :1.0 &
 sleep 1
 am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity > /dev/null 2>&1
 sleep 1
-DISPLAY=:1.0 MESA_NO_ERROR=1 MESA_LOADER_DRIVER_OVERRIDE=zink TU_DEBUG=noconform MESA_GL_VERSION_OVERRIDE=4.6COMPAT MESA_GLES_VERSION_OVERRIDE=3.2 dbus-launch --exit-with-session xfce4-session & > /dev/null 2>&1
+DISPLAY=:1.0 MESA_LOADER_DRIVER_OVERRIDE=zink GALLIUM_DRIVER=zink TU_DEBUG=noconform dbus-launch --exit-with-session xfce4-session & > /dev/null 2>&1
 EOF
 
 # Tornando o script executável
 chmod +x ~/../usr/bin/start
+rm Install.sh
 
 echo "Instalação concluída. Use o comando 'start' para iniciar o XFCE4 com Zink."
