@@ -17,6 +17,7 @@ pkg install git -y
 echo "Instalando XFCE4 e pacotes adicionais..."
 apt install xfce4 -y
 apt install xfce4-goodies -y
+apt install firefox -y
 apt install mesa-vulkan-icd-freedreno-dri3 -y
 
 # Passo 3: Criação do Script de Inicialização
