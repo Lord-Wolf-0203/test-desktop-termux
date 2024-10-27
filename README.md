@@ -14,6 +14,11 @@ pkg install proot-distro -y
 pkg install wget -y
 pkg install git -y
 ```
+## xfce4 com mesa-vulkan-dri3 nativo no termux (adreno)
+
+```sh
+curl -sL https://raw.githubusercontent.com/Lord-Wolf-0203/test-desktop-termux/refs/heads/main/install-xfce4-zink.sh -o install-xfce4-zink.sh && chmod +x install-xfce4-zink.sh && ./install-xfce4-zink.sh
+```
 
 ### erro signal 9 no termux 
 **se você estiver no Android 12+ vai ser necessário usar comandos adb para desativar o Phantom process killer**
