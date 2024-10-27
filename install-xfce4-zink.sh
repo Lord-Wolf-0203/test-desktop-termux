@@ -133,8 +133,14 @@ EOF
 
 # Tornando os scripts executáveis
 chmod +x ~/../usr/bin/start
-chmod +x "$xfwm4_config_dir/xfwm4.xml"  # Permissões para o arquivo XML
-
+# Criando diretórios 
+mkdir $HOME/Desktop 
+mkdir $HOME/Downloads 
+mkdir $HOME/Templates 
+mkdir $HOME/Public 
+mkdir $HOME/Documents 
+mkdir $HOME/Pictures 
+mkdir $HOME/Videos 
 # Removendo o script de instalação
 rm install-xfce4-zink.sh
 
