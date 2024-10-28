@@ -17,7 +17,7 @@ pkg install git -y
 ### xfce4 com mesa-vulkan-dri3 nativo no termux (adreno)
 
 ```sh
-curl -sL https://raw.githubusercontent.com/Lord-Wolf-0203/test-desktop-termux/refs/heads/main/install-xfce4-zink.sh -o install-xfce4-zink.sh && chmod +x install-xfce4-zink.sh && ./install-xfce4-zink.sh
+curl -sL https://raw.githubusercontent.com/Lord-Wolf-0203/test-desktop-termux/refs/heads/main/install-xfce4-mesa-vulkan-dri3.sh -o install.sh && chmod +x install.sh && ./install.sh
 ```
 
 ### erro signal 9 no termux 
