@@ -119,7 +119,7 @@ cat > "$xfwm4_config_dir/xfwm4.xml" << 'EOF'
 EOF
 
 # Passo 4: Criação do Script de Inicialização
-echo "Criando script de inicialização para o XFCE4 com Zink..."
+echo "Criando script de inicialização para o XFCE4 com Mesa Vulkan DRI3..."
 
 cat > ~/../usr/bin/start << 'EOF'
 #!/bin/bash
@@ -143,6 +143,6 @@ mkdir $HOME/Pictures
 mkdir $HOME/Videos
 mkdir $HOME/Music
 # Removendo o script de instalação
-rm install-xfce4-zink.sh
+rm install.sh
 
-echo "Instalação concluída. Use o comando 'start' para iniciar o XFCE4 com Zink."
+echo "Instalação concluída. Use o comando 'start' para iniciar o XFCE4 com Mesa Vulkan DRI3."
