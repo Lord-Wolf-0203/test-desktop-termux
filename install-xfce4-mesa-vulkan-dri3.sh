@@ -5,13 +5,13 @@ echo "Configurando armazenamento e atualizando pacotes..."
 termux-setup-storage
 apt update
 apt upgrade -y
-pkg install x11-repo -y
-pkg install termux-x11-nightly -y
-pkg install tur-repo -y
-pkg install pulseaudio -y
-pkg install proot-distro -y
-pkg install wget -y
-pkg install git -y
+apt install x11-repo -y
+apt install termux-x11-nightly -y
+apt install tur-repo -y
+apt install pulseaudio -y
+apt install proot-distro -y
+apt install wget -y
+apt install git -y
 
 # Passo 2: Instalação do XFCE4 e Mesa Vulkan
 echo "Instalando XFCE4 e pacotes adicionais..."
