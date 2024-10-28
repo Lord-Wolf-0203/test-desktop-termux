@@ -140,7 +140,8 @@ mkdir $HOME/Templates
 mkdir $HOME/Public 
 mkdir $HOME/Documents 
 mkdir $HOME/Pictures 
-mkdir $HOME/Videos 
+mkdir $HOME/Videos
+mkdir $HOME/music
 # Removendo o script de instalação
 rm install-xfce4-zink.sh
 
