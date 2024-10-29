@@ -25,7 +25,7 @@ TARBALL_STRIP_OPT='2'
 EOF
 
 # Passo 3: Instalando o kali
-ech "Instalando o Kali..."
+echo "Instalando o Kali..."
 proot-distro install kali
 proot-distro login kali --shared-tmp
 apt update
