@@ -22,8 +22,12 @@ DISTRO_COMMENT="Kali Linux nethunter aarch64"
 TARBALL_URL['aarch64']="http://kali.download/nethunter-images/current/rootfs/kali-nethunter-rootfs-nano-arm64.tar.xz"
 TARBALL_SHA256['aarch64']="a1624e4bb2423dee6e9806455dc963a32d6cbbcbe2d4ac008826d0fd7fe1e773"
 TARBALL_STRIP_OPT='2'
+distro_setup() {
+    # Configure en_US.UTF-8 locale.
+    sed -i -E 's/#[[:space:]]?(en_US.UTF-8[[:space:]]+UTF-8)/\1/g' ./etc/locale.gen
+    run_proot_cmd DEBIAN_FRONTEND=noninteractive dpkg-reconfigure locales
+}
 EOF
-
 # Passo 3: Instalando o Kali e configurando dentro do ambiente proot
 echo "Instalando o Kali..."
 proot-distro install kali
