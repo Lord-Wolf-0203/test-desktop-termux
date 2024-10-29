@@ -24,15 +24,14 @@ TARBALL_SHA256['aarch64']="a1624e4bb2423dee6e9806455dc963a32d6cbbcbe2d4ac008826d
 TARBALL_STRIP_OPT='2'
 EOF
 
-# Passo 3: Instalando o kali
+# Passo 3: Instalando o Kali e configurando dentro do ambiente proot
 echo "Instalando o Kali..."
 proot-distro install kali
-proot-distro login kali --shared-tmp
+proot-distro login kali --shared-tmp << 'EOF'
 apt update
 apt full-upgrade -y
 apt autoremove -y
 apt install apt-utils -y
-
 
 # Passo 4: Instalação do Mesa Vulkan
 echo "Instalando o Mesa Vulkan..."
@@ -43,7 +42,8 @@ dpkg -i mesa-vulkan-kgsl_24.1.0-devel-20240120_arm64.deb
 # Passo 5: Instalação do XFCE4
 echo "Instalando o XFCE4..."
 apt install kali-desktop-xfce4 -y
-exit
+EOF
+
 # Passo 6: Criação do Script de Inicialização
 echo "Criando o script de inicialização..."
 cat > ~/../usr/bin/start << 'EOF'
