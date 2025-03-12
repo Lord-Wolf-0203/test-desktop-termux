@@ -1,5 +1,13 @@
 # Método Recomendado para Instalar a Helluva OS (HOS) em Dispositivos Sedona
 
+**Observações Importantes:**
+
+* Certifique-se de substituir `/path/to/` pelo caminho real onde os arquivos estão localizados no seu computador.
+* Tenha os drivers ADB e Fastboot instalados no seu computador.
+* Tenha os arquivos `twrp.img`, `copy-partitions.zip`, `boot.img`, `dtbo.img`, `vendor_boot.img` e `HelluvaOS.zip` salvos em uma pasta de fácil acesso no seu computador.
+* **Este procedimento vai apagar todos os dados do seu dispositivo. Faça um backup completo antes de prosseguir.**
+* Siga as instruções cuidadosamente para evitar danos ao seu dispositivo.
+
 1.  **Faça o flash da stock ROM utilizando o RSA (Rescue and Smart Assistant).**
 
     * Utilize o Rescue and Smart Assistant da Motorola para restaurar a stock ROM. Isso garante que seu dispositivo esteja no estado de fábrica e resolve qualquer problema com o sistema anterior.
@@ -51,11 +59,3 @@
     * Isso limpará seus dados e garantirá que o sistema funcione corretamente com a Helluva OS.
 
 9.  **Reinicie o dispositivo e aproveite a Helluva OS.**
-
-**Observações:**
-
-* Certifique-se de substituir `/path/to/` pelo caminho real onde os arquivos estão localizados no seu computador.
-* Tenha os drivers ADB e Fastboot instalados no seu computador.
-* Tenha os arquivos `twrp.img`, `copy-partitions.zip`, `boot.img`, `dtbo.img`, `vendor_boot.img` e `HelluvaOS.zip` salvos em uma pasta de fácil acesso no seu computador.
-* Lembre-se de que este procedimento vai apagar todos os dados do seu dispositivo. Faça um backup antes de prosseguir.
-* Siga as instruções cuidadosamente para evitar danos ao seu dispositivo.
